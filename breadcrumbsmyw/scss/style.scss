@@ -1,0 +1,69 @@
+@import "compass/css3";
+
+$white : #fff;
+$sky-blue: #999999;
+$lime-green: #71F76A;
+
+.breadcrumbs ul li { 
+   display: inline-block;
+ a {
+	 float: left;
+   padding: 20px 40px 0 80px;
+	 height: 40px;
+   background: $sky-blue;
+	 text-align: center;
+	 position: relative;	
+	 font-size: 20px;
+   font-family: Myriad Pro;
+	 text-decoration: none;
+	 color: $white;
+}}
+
+
+.breadcrumbs ul li { 
+  a:after {
+    content: "";  
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid $sky-blue;
+	  position: absolute; 
+    right: -40px; top: 0;
+    z-index: 1;
+}
+
+  a:before {
+	  content: "";  
+  	border-top: 30px solid transparent;
+  	border-bottom: 30px solid transparent;
+  	border-left: 40px solid $white;
+  	position: absolute; 
+    left: 0; top: 0;
+}}
+
+
+.breadcrumbs ul li:first-child a {
+	border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+
+.breadcrumbs ul li:first-child a:before {
+	display: none; 
+}
+
+.breadcrumbs ul li:last-child a {
+	padding-right: 80px;
+	border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px;
+}
+
+.breadcrumbs ul li:last-child a:after {
+	display: none; 
+}
+
+.breadcrumbs ul li a:hover {
+	background: $lime-green;
+}
+
+.breadcrumbs ul li a:hover:after {
+		border-left-color: $lime-green;
+	}

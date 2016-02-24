@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Playfair+Display:900italic);
+
+.body {
+    line-height: 1.2;
+    }
+
+    #top, #bottom, #left, #right {
+  background: #ccff33;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 5px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 5px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+.selection {
+    background: #f06;
+    color: #fff;
+    text-shadow: none
+}
+
+
+.nav{
+    border:0px solid #000;
+    border-width: 0px 0px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #ccff33;
+
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    color: #000;
+}
+
+img {
+    vertical-align: middle;
+    max-width:500px;
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color:#FF69B4;
+    font-weight: bolder;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0
+}
+
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Playfair+Display:900italic);
+
+body {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 0 .5em;
+  font: 1.125em/1.4 "Lato", sans-serif;
+}
+
+h1 {
+  font: italic 2.5em/1 "Playfair Display", serif;
+	transition: font-size .03125s;
+  
+  @media only screen and (min-width: 40em) {
+    font-size: 4em;
+}
+
+}
+section {
+	box-shadow:0 2px 5px rgba(0,0,0,0.2);
+	background:#fff;
+	width:60%;
+	margin:100px auto;
+	padding:50px;
+}
+blockquote {
+	text-align:center;
+	font-size:20px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	position:relative;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:after {
+	color:#ccc;
+	font-family:Source Sans Pro;
+	content: open-quote;
+	font-size:80px;
+	position:absolute;
+	left:50%;
+	bottom:calc(100% - 20px);
+	background:#fff;
+	height:55px;
+	width: 55px;
+	line-height:normal;
+	text-align:center;
+	transform:translateX(-50%);
+}
+blockquote p {
+	padding:20px;
+}
+
+
+      
+h3 {
+  font: italic 1.5em/1 "Playfair Display", serif;
+  transition: font-size .03125s;
+  
+  @media only screen and (min-width: 40em) {
+    font-size: 4em;
+      }
+    }
+  }
+}
